@@ -17,6 +17,7 @@ if option == 2:
 
 
 if option == 3:
+    #First we ask a question.
     print("You arrive to the maintenance room. These are your options:")
     print("1-Check the old Spaceship map on the wall.")
     print("2-Grab a rusty pipe on the floor.")
@@ -25,7 +26,9 @@ if option == 3:
     while option < 1 and option > 3:
         print("Not valid option. Try again: ")
         option = int(input())
+        #If the user doesn't enter a valid answer it will keep asking for a valid one.
 
+    #Every option has it's own path.
     if option == 1:
         os.system("cls")
         print("After taking a look to the map you realise that there's an emergency escape ship room.")
