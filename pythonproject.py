@@ -199,6 +199,68 @@ def escape_pod_outcome3(): #Escape Pod Outcome3
     you_lose_end()
 
 
+########################################## GLEN MAIN ##########################################
+
+def glen_main():
+
+    clear_screen()
+    print("You go down a narrow dark corridor and arrive to ladder.")
+    print("There are holes in both the ceiling and the floor where the ladder passes through.")
+    print("What do you do?")
+    print()
+    print("1-Climb up the ladder.")
+    print("2-Climb down the ladder.")
+    print("3-Turn back.")
+
+    choice = get_user_choice3()
+
+    if choice == '1': #Up the ladder
+        up_ladder()
+        choice = get_user_choice2()
+        if choice == '1': 
+            acid_pool_coutcome()#YOU LOSE
+        else:
+            elevator_floors()
+            choice = get_user_choice3()
+            if choice == '1':
+                control_room() #Control Room
+                choice = get_user_choice3()
+                if choice == '1':
+                    control_room_outcome1()#YOU LOSE
+                elif choice == '2':
+                    control_room_outcome2()#YOU WIN
+                else:
+                    control_room_outcome3()#YOU LOSE
+            elif choice == '2':
+                escape_pods()
+                choice = get_user_choice3()
+                if choice == '1':
+                    escape_pod_outcome1()#YOU WIN
+                elif choice == '2':
+                    escape_pod_outcome2()#YOU LOSE
+                else:
+                    escape_pod_outcome3()#YOU LOSE
+            else:
+                elevator_floors_outcome3()#YOU LOSE
+    elif choice == '2': #Down the ladder
+        down_ladder() #YOU LOSE
+    else: #Turn back
+        turn_back()
+        choice = get_user_choice2()
+        if choice == '1':
+            control_room()
+            choice = get_user_choice3()
+            if choice == '1':
+                control_room_outcome1() #YOU LOSE
+            elif choice == '2':
+                control_room_outcome2() #YOU WIN
+            else:
+                control_room_outcome3() #YOU LOSE                
+        else:
+            turn_back_outcome2()#YOU LOSE 
+
+########################################## END GLEN ##########################################
+
 print("You are a prisoner that has been held captive on a Spaceship for 6 months.\n Now it's your time to escape. A guard that you bribed will come at night time to open your cell.")
 print("The guard came and opened your cell, where will you go?")
 print("1-Go left")
@@ -212,7 +274,7 @@ if option == 1:
     
 
 if option == 2:
-
+    glen_main()
 
 if option == 3:
     #First we ask a question.
