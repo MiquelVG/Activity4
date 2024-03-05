@@ -27,6 +27,30 @@ def you_win_end():#YOU WIN
     print("Exiting the program...")
     sys.exit()
 
+
+def get_user_choice2():#2 Choices
+    while True:
+        choice = input("Enter your choice (1 or 2): ")
+        if choice in ['1', '2']:
+            return choice
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
+def get_user_choice3():#3 Choices
+    while True:
+        choice = input("Enter your choice (1, 2 or 3): ")
+        if choice in ['1', '2', '3']:
+            return choice
+        else:
+            print("Invalid choice. Please enter 1, 2 or 3.")
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+
+
+
 print("You are a prisoner that has been held captive on a Spaceship for 6 months.\n Now it's your time to escape. A guard that you bribed will come at night time to open your cell.")
 print("The guard came and opened your cell, where will you go?")
 print("1-Go left")
