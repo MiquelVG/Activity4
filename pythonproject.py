@@ -1,6 +1,32 @@
 import os
 import sys
 
+################################### GLEN'S STORY ###################################
+
+########################## PROGRAM END, CLEAR and CHOICES ##########################
+
+def you_lose_end():#YOU LOSE
+    print()
+    print("-------------")
+    print("--GAME OVER--")
+    print("--YOU  LOSE--")
+    print("-------------")
+    print()
+    input("Press any key to exit ")
+    print("Exiting the program...")
+    sys.exit()
+
+def you_win_end():#YOU WIN
+    print()
+    print("-------------")
+    print("--GAME OVER--")
+    print("---YOU WIN---")
+    print("-------------")
+    print()
+    input("Press any key to exit ")
+    print("Exiting the program...")
+    sys.exit()
+
 print("You are a prisoner that has been held captive on a Spaceship for 6 months.\n Now it's your time to escape. A guard that you bribed will come at night time to open your cell.")
 print("The guard came and opened your cell, where will you go?")
 print("1-Go left")
