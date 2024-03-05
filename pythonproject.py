@@ -48,7 +48,155 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+########################################## STORIES ##########################################
+              
+def up_ladder(): #Up Ladder
+    clear_screen()
+    print("You climb for what seems like an eternity but finally end up in a room with a swimming pool.")
+    print("What do you do next?")
+    print()
+    print("1. Take a swim.")
+    print("2. Find another way out.")
+    print()
 
+def down_ladder(): #Down Ladder
+    clear_screen()
+    print("A hatch suddenly closes behind you! You try to open it but no use, so you begin to descend the ladder. You start to notice you can't breath and you feel an immense suction force beneath you.")
+    print("You can't hold on any longer and let go.... Barely conscious, you realise you have been ejected into the infinite vacuum of space....")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def turn_back(): #Turn Back
+    clear_screen()
+    print("You head back down the corridor and see an elevator")
+    print("It has 2 floors but the names are too difficult to make out.")
+    print("Which floor?")
+    print()
+    print("1. ` s  ' , ` n . '")
+    print("2. E,.c; P.'s`'.r,")
+    print()
+
+def acid_pool_coutcome(): #Acid Pool Outcome
+    clear_screen()
+    print("You do your best swan dive, at least a 7 out of 10 you think to yourself.")
+    print("Unfortunately for you, it is not a pool. It is infact a rather large deposit of a highly acidic acid!")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def turn_back_outcome2(): #Turn Back Outcome 2
+    clear_screen()
+    print("You notice after you have pressed the button that there is a broken key next to it.")
+    print("You look closer at the floor name on the button panel and realise it was just a bit dirty, so you rub the dirt away.")
+    print()
+    print("Ej,ct Pri,oners.")
+    print("WARN`NG: Turn k.y and leave e;evator.")
+    print()
+    print("If you don't already know, you have ejected yourself from the spaceship. Ahh the irony!")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def elevator_floors(): #Elevator Floors
+    clear_screen()
+    print("After exploring a bit of the room, you find an elevator.")
+    print("You see that there are 3 extra floors that you can go to.")
+    print("Unfortunately the names are quite faded and hard to make out.")
+    print("What do you press?")
+    print()
+    print("1. Syst `o vtr ls.")
+    print("2. -sca e P d^.")
+    print("3. P`is n C l`s.")
+    print()
+
+def elevator_floors_outcome3(): #Elevator_Floors_Outcome3
+    clear_screen()
+    print("The elevator starts going down but very slowly.")
+    print("You get the feeling that this may have been a terrible choice but there is no turning back.")
+    print("The doors open and you are greeted with several guards standing outside.")
+    print("It turns out that the floor on the elevator button panel said 'Prison Cells'!!!.")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+
+def control_room(): #Control Room
+    clear_screen()
+    print("You have entered the system control room.")
+    print("The pilot of the spaceship is manning the controls and has not seen you yet.")
+    print("What do you do next?")
+    print()
+    print("1. Charge at the pilot to take him out.")
+    print("2. Sneak up on him")
+    print("3. Press the big red button...")
+    print()
+
+def control_room_outcome1(): #Control Room Outcome1
+    clear_screen()
+    print("You charge at the pilot but he hears you coming.")
+    print("He turns around and presses a button on his belt. You fall to the ground instantly in pain.")
+    print("Unfortunately you have been wearing an electric prison collar.")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def control_room_outcome2(): #Control Room Outcome2
+    clear_screen()
+    print("You sneak like a serpent up on the pilot and he has no clue you are there.")
+    print("Once close enough you lunge and grab hold of him in a rear hold choke.")
+    print("You demand him to open a space pod and you escape in the pod.")
+    print()
+    input("Press any key to continue...")
+    you_win_end()
+
+def control_room_outcome3(): #Control Room Outcome3
+    clear_screen()
+    print("You see a big red button and can't help yourself.")
+    print("You push the big red button and the spaceship explodes spectacularly!")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def escape_pods(): #Escape Pods
+    clear_screen()
+    print("What a stroke of luck! You have found the room of the spaceships escape pods.")
+    print("There are a 3 pods to enter.")
+    print("Which one will you take to escape the ship?")
+    print()
+    print("1. Pod 16")
+    print("2. Pod 17")
+    print("3. Pod 18")
+    print()
+
+def escape_pod_outcome1(): #Escape Pod Outcome1
+    clear_screen()
+    print("You open Pod 16 and and go in.")
+    print("The controls are clearly labeled and you've had some flying experience before.")
+    print("You eject in the pod and escape the spaceship!!")
+    print()
+    input("Press any key to continue...")
+    you_win_end()
+
+def escape_pod_outcome2(): #Escape Pod Outcome2
+    clear_screen()
+    print("You open Pod 17 but find there is an android (robot) inside.")
+    print("The android immediately captures you and turns you over to the spaceship crew.")
+    print("Your punishment will be even harsher for your troubles...")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
+
+def escape_pod_outcome3(): #Escape Pod Outcome3
+    clear_screen()
+    print("You open Pod 18 and go inside.")
+    print("It seems to be quite and old pod and the controls don't seem to be very clear.")
+    print("You press what you think is the iginition but unfortunately you have activated the stasis system.")
+    print("The stasis system puts the user to sleep for on long journeys across the galaxy.")
+    print("Unfortunately you don't have time on your hands and you are eventually caught by the spaceship crew.")
+    print()
+    input("Press any key to continue...")
+    you_lose_end()
 
 
 print("You are a prisoner that has been held captive on a Spaceship for 6 months.\n Now it's your time to escape. A guard that you bribed will come at night time to open your cell.")
